@@ -1,7 +1,0 @@
-/* Transition-Changing in one state of element to another
-It includes delay timing-function duration */
-#circle:hover{
-    border-radius: 100px;
-    background-color: green;
-    margin-top:400px;
-}

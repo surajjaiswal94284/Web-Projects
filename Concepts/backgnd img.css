@@ -1,0 +1,12 @@
+/*Background-image:it is used to set back.image to an element*/
+/*Background-size-it is used to define size of picture
+    It includes:contain(repeat),cover(crop),auto(stretch)
+    contain is best to use.*/
+div{
+    height: 400px;
+    width: 500px;
+    background-color: aqua;
+    margin: 10px auto;
+    background-image: url("captain america.jpg");
+    background-size:contain;
+}

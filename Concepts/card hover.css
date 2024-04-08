@@ -1,0 +1,17 @@
+.c1 img{
+    height:400px;
+    width: 400px;
+    border-radius: 30px;
+}
+.c1{
+    width:400px;
+    border: 2px solid black;
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px black;
+    transition: 3s;
+}
+.c1:hover{
+    box-shadow: 2px 2px 16px goldenrod;
+}

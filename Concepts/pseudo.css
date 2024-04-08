@@ -1,0 +1,70 @@
+/*Pseudo class-a keyword added to selectors that specify a special state of the selected elements. */
+/*1.hover-moving cursor*/
+button:hover{
+    background-color: black;
+    color: red;
+}
+/*2.active-clicking*/
+button:active{
+    background-color: palevioletred;
+    color:blue
+}
+ p:active{
+    font-weight: bold;
+    color:blue
+    
+} 
+/*3.checked-used in radio,checkbox*/
+input[type="radio"]:checked+label{
+    font-weight: bold;
+    color:red
+}
+/*nth type-It will calculate the position then applying the style*/
+h3:nth-of-type(2n){
+    background-color: yellow;
+}
+/*pseudo elements-It is used to style specific parts of an element.*/ 
+p::first-letter{
+    color:red;
+}
+p::first-line{
+    color:purple;
+}
+p::selection{
+    background-color: red;
+}
+/*Cascade-It is the algorithm which apply style basd upon css declarations(It shoul be same)*/
+h1{
+    background-color: green;
+}
+h1{
+    background-color: blue;
+}
+#login{
+    background-color: red;
+}
+button{
+    background-color: blue;
+}
+#style{
+    color: blueviolet;
+}
+/*Specificity-It is an algorithm that decides
+which css declaration should apply first based upon the weight.
+weight means the mathematical number.
+priority list
+1.Inline styles
+2.Id
+3.Class,pesudo-class,attribute selector
+4.Element,pesudo-element
+Rules regarding specificity
+1.inline>id>class>elements
+2.use more selectors
+3.If specificity are same then it'll follow to cascading*/
+/*important-it's priority is more than inline list
+once it is declared it can't be changed*/
+h3{
+    background-color: yellow !important; /*Here it won't change even after
+                                            inline style has been applied.*/
+}
+

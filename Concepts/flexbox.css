@@ -1,0 +1,68 @@
+/*flexbox-It is used to arrange the elements in systematic way
+it creates a responsive websites(changes layout with size)
+It includes
+row,row-reverse,column,column-reverse(flex-direction)
+display-flex(it'll sets the elements layout based upon the direction)*/
+/*JUSTIFY-CONTENT DONE IN MAIN-AXIS
+Justify-content=tells how the browser distributes
+the space btw and around content items along the main-axis
+Includes
+flex-start,flex-end,center
+space-between,space-around,space-evenly(equal spaces)
+flex-wrap-used to wrap any element
+Includes
+nowrap(by default),wrap(wrap along the main-axis),
+wrap-reverse(wrap in reverse acc. to cross axis)
+ALIGN ITEMS,CONTENT,SELF DONE IN CROSS-AXIS
+Align items-This is acc. to the cross axis
+Includes
+flex-start,flex-end,center,baseline(content in elements get arrange in same line
+in all the divs
+Align content
+includes
+flext-start,flex-end,center,space-between,space-evenly,space-around
+Align self-Particular to item not container
+includes same as above upto flex*/
+/*Flex-sizing-It'll set the size of item in MAIN-AXIS
+Includes
+flex-basis-Initial size of item
+flex-grow-item will grow as per the size is avail in the 
+container.
+flex-shrink-item will shrink as per the size is avail in the 
+container.*/
+#container{
+    height: 400px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;/*default sets in row as main axis*/
+    flex-direction: column;
+    /*justify-content: flex-end;
+    justify-content: space-evenly; */
+    /*flex-wrap: nowrap;By default sets in original form*/
+    /* flex-wrap: wrap-reverse; */
+    /* align-items: baseline; */
+    /* align-content: baseline; */
+    flex-wrap: wrap;
+}
+#container div{
+    width:300px;
+    height:100px;
+}
+#org{
+    /* align-self: flex-end; */
+    flex-shrink:5;/*With row sees width
+                    With column sees height*/
+    max-width: 200px;/*(Sets default width so shrink,grow will fix)*/
+    flex-basis: 80px;/*With row sees width
+                        With column sees height*/
+}
+h1{
+    text-align: center;
+}
+/*Flex-shorthand
+flex:2 2 100px(grow|shrink|basis)
+flex:2 100px(grow|basis)
+flex:2(grow)
+flex:100px(basis)*/

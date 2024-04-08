@@ -1,0 +1,67 @@
+/*Selectors-This select the HTML elements you want to style.*/
+/*This is a universal selector*/
+*{
+    font-family: 'Courier New';
+}
+/*Element selector
+h1,h3{
+    color:
+}
+*/
+/*Id selector-Use id when
+ you want to uniquely identify a specific element on a page.
+ and when to give different styles to same elements*/
+#login{
+    color: blue;
+    background-color: black;
+}
+#signup{
+    color:black;
+    background-color:rgb(185, 43, 39);
+}
+/*Class-Use class when 
+you have multiple elements that need to share the same styles or functionality..*/
+.a{
+    background-color: brown;
+}
+/*Descendent selector-used to give style to tag inside a tag.*/
+p a{
+    color:purple;
+    background-color: yellow;
+}
+nav ul li a{ /* or I could say,'nav a'(This is direct descendent) */
+    background-color: green;
+}
+/*Combinator-This explains the relationships between the selectors*/
+/*Adjacent Sibling combinator-allows you to select elements based on their relationship to another element 
+that shares the same parent.*/
+p+h3{ 
+    text-decoration: underline;
+}
+.a+button{
+    background-color: blueviolet;
+}
+/*Child combinator-allows you to select elements based on their relationship to another element 
+that shares parent-child relationship.*/
+div>input{  /*Direct descendent is not possible*/  
+    background-color: gold;
+}
+/*Attribute selectors-allow you to select HTML elements based on the presence or value of their attributes.*/
+input[type="text"]{
+    color: cadetblue;
+}
+button[class]{
+    background-color:pink;
+}
+a[href^="/"]{   /*Shows starting value*/
+    background-color: darkmagenta;
+}
+a[class*='w']{  /*Shows matching of any value*/
+    background-color: darkorange;
+}
+input[type$='d']{   /*Shows ending of any values*/
+    background-color: crimson;
+}
+div[id="myid"]>p{
+        color: green;
+}

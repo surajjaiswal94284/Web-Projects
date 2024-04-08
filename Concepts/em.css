@@ -1,0 +1,43 @@
+/*em-parent ke font-size ke hisaab se
+apni koi property set krni hai toh use em
+OR
+child ke font-size ke hisaab se
+apni koi property set krni hai toh use em*/
+#parent {
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    font-size: 10px; /* Font size of the parent element */
+}
+/*Related to parent*/
+#child {
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    width: 2em; /* Width of the child element relative to the font size of its parent
+                    (10*2) */
+    margin: 10em; /* Font size of the child element relative to its parent's font size 
+                    (10*10)*/
+    padding:1em /*1*10 set according to child font-size*/
+}
+button{
+    font-size: 5px;
+    border:5px solid green;
+    border-radius: 15px;
+    padding-left:1em;   /*padding space reduces as long as font-size changes*/
+    padding-right: 1em;
+    /*But I want that padding should set acc. to font-size then
+    padding-left:1em;
+    padding-right:1em;*/
+}
+/*Drawback of em is snowball effect*/
+div{
+    font-size: 2em;
+}
+/* To Overcome this we use rem(root em)
+div{
+    font-size:2rem;(root is <html>)
+} */
+/*em-Property set acc. to the parent/child
+   rem-Property set acc. to the root
+   %-Sets property relative to it's parent*/

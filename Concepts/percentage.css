@@ -1,0 +1,14 @@
+/*Percentage(%)-It is used to specify a value relative to another value*/
+#outer{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    margin: 50px;
+}
+#inner{
+    height: 80px;
+    width: 50%; /*Set the width of the child element to 50% of its parent container*/
+    background-color: purple;
+    margin: 20px;
+}   
+

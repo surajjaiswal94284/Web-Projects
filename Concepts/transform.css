@@ -1,0 +1,44 @@
+/* Transform-It'll rotate,scale,skew,or tranlate the elements */
+section{
+    margin-top: 100px;
+}
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border:2px solid black;
+    margin:10px;
+}
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+/*Rotate*/
+#one{
+    transform: rotate(45deg); /*I can also give -ve degrees*/
+}
+/*Scale-size changes*/
+#two{
+    transform: scale(2); /*or scale(2,3)x,y axis
+                           or scalex(2) only x-axis will change
+                           or scaley(4) only y-axis will change*/
+}
+/*Translate-Move to x and y axis*/
+#three{
+    transform: translate(100px);/*or translate(2,3)x,y axis
+                                or translatex(2) only x-axis will change
+                                or translatey(4) only y-axis will change*/
+}
+/*Skew-Tilt the elements*/
+#four{
+    transform: skew(45deg);
+}
+/*Apply both properties*/
+#five{
+    transform:rotate(45deg);
+    transform: ;
+}

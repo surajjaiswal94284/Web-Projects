@@ -1,0 +1,59 @@
+/*text-align-It decides the position of text
+1.left/start
+2.right/end
+3.center
+4.justify-It will create horizontal space*/
+/*font-weight-It will decide the boldness and lightness of text
+size-100-900
+normal=400
+bold=700
+we can also use number in font-weight
+bolder,lighter*/
+/*
+text-decoration-It sets the appearance of decorative lines on text.
+1.underline
+2.overline
+3.line through
+4.none
+5.double(create double line)
+6.Also sets color of lines
+7.wavy,dotted
+*/
+/*
+line-heigth-It controls height of the line of text
+1.normal
+2 2.5
+letter-spacing=It controls the horizontal spacing btw text.
+1. normal
+2 10px
+*/
+/*
+font-size-Used to measure size of our font
+1 inch=96px(pixel)
+not used uopn responsive websites
+*/
+h1{
+    text-align: center;
+    text-decoration: red wavy underline;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    text-decoration: red dotted line-through;
+}
+p{
+    text-align: center;
+    line-height: 2.5;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: fantasy;
+}
+h3{
+    font-weight: normal;
+    text-decoration: overline;
+}
+/*I can also remove an underline from any link*/
+a{
+    text-decoration: none;
+}

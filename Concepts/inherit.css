@@ -1,0 +1,19 @@
+/*Inheritance-It refers to the way in which certain properties of an element are 
+passed down from its parent elements to their descendants.*/
+div{
+    background-color: yellow;
+}
+form{
+    background-color: red;
+}
+/*Some elements doesn't support inheritance
+so we use inherit keyword to get properties of parents*/
+input{
+    background-color: inherit;
+}
+button{
+    background-color: inherit;
+}
+button:hover{
+    background-color: black;
+}

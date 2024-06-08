@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: #62D1B7;
+}
+.box{
+    background-color:  rgb(241, 241, 201);
+}
+label{
+    display:block; 
+    font-size:xx-large;
+    height: 3rem;
+}
+button{
+    background-color: black;
+    color:white;
+    border:none;
+    height: 2rem;
+   width:10vh;
+    border-radius: 15%;
+    cursor: pointer;
+}
+input{
+    text-align: center;
+    height: 2rem;
+   width: 25vh;
+    background-color:white;
+
+}
+h1{
+    background-color: #944E67;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3,p{
+    color:black;
+}

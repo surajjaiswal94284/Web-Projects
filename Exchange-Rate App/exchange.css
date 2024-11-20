@@ -1,0 +1,75 @@
+body{ /*This helps to center the container1(div)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+.container1{/*This helps to set the properties*/
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10%;
+    width: 90vh;
+    height: 80vh;
+}
+/*Setting the form*/
+form input{
+    position: relative;
+    bottom:1rem;
+    border:1px solid lightgray;
+    border-radius: 0.75rem;
+    width: 100%;
+    height: 5vh;
+    margin-top: 10px;
+}
+.first{
+    position: relative;
+    top:10px;
+}
+.drop,.result,.btn{
+    margin-top: 3rem;
+}
+/*Setting the image and dropdown area*/
+img{
+    height: 2rem;
+}
+select{ /*This helps to match the position of flag and dropdown*/
+    position: relative;
+    bottom: 10px;
+    border: none;
+    outline: none;
+} 
+.from2,.to2{/*This helps to set the border of image and dropdown*/
+    border: 1px solid lightgray;
+    border-radius: 0.7rem;
+    padding:0 0.25rem 0 0.25rem;
+    position: relative;
+    bottom: 1rem;
+}
+i{
+    position: relative;
+    top:0.9rem;
+}
+.drop{/*This helps to match the level of 'from' and 'to'*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Holds button area*/
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.75rem;
+    background-color: blueviolet;
+    color:white;
+    font-size: medium;
+}
+/*Position of h1,p*/
+.container1 h1,p{
+    position: relative;
+    bottom:0.9rem;
+}

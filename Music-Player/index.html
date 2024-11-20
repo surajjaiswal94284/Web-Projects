@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8fdec6dc49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music">
+            <nav>
+                <div class="head">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            
+            <img src="Material/Avengers-Endgame-768x1024.jpg" alt="Image">
+            <h1>Portals</h1>
+            <p>Alan-Silvestri</p>
+
+            <audio controls>
+                <source src="Material/Alan Silvestri - Portals (From).mp3" type="audio/mp3">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-play" id="play"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
